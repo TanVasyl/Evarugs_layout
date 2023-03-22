@@ -1,0 +1,116 @@
+.header_conteiner{
+    display: flex;
+    background: linear-gradient(269.91deg, rgba(46, 49, 146, 0.7) 0%, rgba(212, 20, 90, 0.7) 98.16%);
+    justify-content: space-between;
+    margin-bottom: 47px;
+    height: 77px;
+}
+.contacts {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 10px;
+    color: #FFFFFF;
+    padding-left: 128px;
+}
+.contacts_vel {
+    text-shadow:  1px 0 1px #000, 
+    0 1px 1px #000, 
+    -1px 0 1px #000, 
+    0 -1px 1px #000; ;
+    padding-left: 12px;
+}
+.contacts_phone{
+    padding-left: 12px;
+}
+.location{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.city{
+    padding-left: 8px;
+}
+.social_page{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding-right: 90px;
+}
+.social_page span{
+    padding-left: 15px;
+}
+@media (max-width:768px) {
+    .header_conteiner{
+        align-items: center;
+    }
+    .contacts{
+        padding-left: 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        line-height: 10px;
+        position: relative;
+        top:5px;
+        margin-left: 45px;
+    }
+    .contacts img{
+        position: absolute;
+        left: 0;
+        top:3px;
+    }
+    .contacts span{
+        padding-bottom: 7px;
+    }
+    .city{
+        font-size: 12px;
+        line-height: 16px;
+        padding-left: 9px;
+        margin-right: 45px;
+    }
+    .social_page{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .social_page span{
+        padding-left: 9px;
+    }
+}
+@media (max-width:320px) {
+    .header_conteiner{
+        height: 99px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+    }
+    .contacts{
+        padding: 0px;
+        margin: 0px;
+        font-size: 14px;
+        line-height: 10px;
+    }
+    .city{
+        padding: 0px;
+        margin: 0px;
+        font-size: 17px;
+        line-height: 16px;
+    }
+    .contacts img,
+    .location img,
+    .social_page{
+        display: none;
+    }
+
+}

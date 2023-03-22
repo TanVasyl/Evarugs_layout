@@ -1,0 +1,229 @@
+.main_block {
+   margin: 0px 40px 0 110px;
+}
+.main_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    margin-bottom: 45px;
+}
+.logo, .logo h2{
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+.navigation {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #737373;
+}
+.navigation a {
+    margin-left: 25px;
+}
+.order{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.vector_back{
+    z-index: -1;
+    position: absolute;
+}
+.first {
+    width: 23px;
+    height: 21px;
+    top: 185px;
+    left: 273px;
+}
+.second {
+    width: 41px;
+    height: 45px;
+    top: 195px;
+    left: 295px;
+}
+.third{
+    width: 40px;
+    height: 44px;
+    bottom: 140px;
+    left: 20px;
+    transform: rotate(-36.87deg);
+}
+.fourth{
+    width: 74px;
+    height: 67px;
+    bottom: 85px;
+    left: -30px;
+    transform: rotate(-36.87deg);
+}
+.five{
+    width: 13px;
+    height: 12px;
+    bottom: 127px;
+    left: 40px;
+    transform: rotate(-36.87deg);
+}
+.carpet_order{
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 59px;
+    color: #000000;
+    max-width: 600px;
+}
+.carpet_order span{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 25px;
+}
+.carpet_order a{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(95.2deg, #B90160 2.23%, #2E3192 99.51%);
+    border-radius: 7px; 
+    width: min-content;
+    padding: 15px 40px;
+    text-decoration: none;
+}
+.carpet_img{
+    position: relative;
+    right: 0;
+    margin-left: 40px;
+}
+.background{
+    z-index: -1;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+}
+
+@media (max-width:768px){
+    .main_block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 70px 66px;
+        position: relative;
+        height: 512px;
+    }
+    .navigation{
+        display: none;
+    }
+    .main_header{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 45px;
+    }
+    .order{
+        position: initial;
+        justify-content: flex-start;
+    }
+    .carpet_order{
+        font-size: 40px;
+        line-height: 40px;
+        display: inline-flex;
+        max-width: 315px;
+    }
+
+    .carpet_img{
+        width: 368px;
+        height: 473px;
+        position: absolute;
+        top: 55px;
+        right: 0;
+    }
+    .background{
+        width: 450px;
+        right: 20px;
+        top: 107px;
+    }
+    .first{
+        top: 127px;
+        left: 162px;
+        transform: rotate(30deg);
+    }
+    .second{
+        top: 131px;
+        left: 182px;
+        transform: rotate(30deg);
+    }
+    .third{
+        bottom: 10px;
+        left: 35px;
+        transform: rotate(-47.87deg);
+    }
+    .fourth{
+        bottom: -47px;
+        left: 46px;
+        transform: rotate(-47.87deg);
+    }
+    .five{
+        display: none;
+    }
+}
+@media (max-width:320px) {
+        .main_block{
+            align-items: center;
+            margin: 0;
+            justify-content: space-around;
+            height: 330px;
+        }
+        .main_header{
+            padding: 0;
+        }
+        .logo h2{
+            font-size: 18px;
+            line-height: 21px;
+        }
+        .logo img{
+            width: 60px;
+        }
+        .carpet_img{
+            display: none;
+        }
+        .carpet_order{
+            text-align: center;
+            align-items: center;
+            font-size: 25px;
+            line-height: 25px;
+            max-width: 250px;
+        }
+        .carpet_order span{
+            font-size: 20px;
+            line-height: 23px;
+        }
+        .carpet_order a{
+            width: 93px;
+            height: 28px;
+            font-size: 10px;
+            line-height: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+        .first,
+        .second,
+        .third,
+        .fourth,
+        .five{
+            display: none;
+        }
+        .background{
+            width: 300px;
+        }
+        
+}

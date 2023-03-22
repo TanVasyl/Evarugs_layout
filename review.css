@@ -1,0 +1,116 @@
+.review  {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(94.31deg, rgba(212, 20, 90, 0.25) 0.96%, rgba(46, 49, 146, 0.25) 104.83%);
+    background-size: contain;
+    height: 357px;
+    overflow-x: hidden;
+}
+.review_conainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 98px 35px 72px;
+    border-radius: 9px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+}
+.img_border {
+    position: absolute;
+    top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 104px;
+    height: 117px;
+    background: linear-gradient(149.15deg, #D4145A 5.38%, #2E3192 95.63%);
+    box-sizing: border-box;
+    clip-path: polygon(50% 0% , 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.review_conainer img{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    max-width: 100px;
+    object-fit: cover;
+    background: linear-gradient(to right, red, purple);
+    clip-path: polygon(50% 0% , 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);   
+}
+
+.review_user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 187px;
+    width: 536px;
+    flex-direction: column;
+    padding-top: 30px;
+
+}
+.review_user_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 45px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.user_name {
+    padding-top: 5px;
+    width: 130px;
+    border-top: 2px solid;
+    border-image: linear-gradient(90.14deg, #D4145A 3.35%, #3D5BF5 91.43%) 1;
+    font-size: 13px;
+    line-height: 15px;  
+    color: #8E8E8E;
+}
+.inactive {
+    opacity: 0.4;
+}
+
+
+@media (max-width:768px) {
+    .review{
+        height: 968px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .review_conainer{
+        height: 187px;
+        width: 536px;
+        margin-bottom: 50px;
+    }
+    .inactive{
+        opacity: 1;
+    }
+    
+}
+@media (max-width:320px) {
+    .review_conainer{
+        max-width: 267px;
+    }
+    .review{
+        padding-top: 40px;
+    }
+    .img_border{
+        top:-70px
+    }
+    .review_user{
+        width: auto;
+        padding: 0;
+    }
+    .review_user_text{
+        max-width: 218px;
+        font-size: 12px;
+        line-height: 14px;
+        margin: 0;
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+}
